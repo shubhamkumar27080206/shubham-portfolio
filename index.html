@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shubham Kumar | DevOps & Cloud Engineer</title>
+  <meta name="description" content="Shubham Kumar: DevOps & Cloud Engineer. Incident and escalation management, RCA, Terraform IaC, EKS/ECS, CI/CD, 99.9% uptime. AWS Certified Solutions Architect – Associate." />
+  <meta name="theme-color" content="#060b16" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Shubham Kumar | DevOps & Cloud Engineer" />
+  <meta property="og:description" content="DevOps & Cloud Engineer. Terraform IaC, EKS/ECS, CI/CD, incident and escalation management, RCA." />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <script>
+    /* set theme before first paint, mark JS as available */
+    (function () {
+      var d = document.documentElement;
+      d.classList.add("js");
+      try { if (!matchMedia("(prefers-reduced-motion: reduce)").matches && !sessionStorage.getItem("booted")) d.classList.add("booting"); } catch (e) {}
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        d.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/cinematic.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shubham Kumar",
+    "jobTitle": "DevOps & Cloud Engineer",
+    "worksFor": { "@type": "Organization", "name": "Wipro Limited" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Gurgaon", "addressRegion": "Haryana", "addressCountry": "IN" },
+    "sameAs": ["https://www.linkedin.com/in/shubham-kumar0201199b9"]
+  }
+  </script>
+</head>
+<body>
+  <div class="boot" id="boot" aria-hidden="true"><div class="boot-in"><pre id="bootLog"></pre><div class="boot-bar"><i id="bootFill"></i></div><div class="boot-pct"><span>click to skip</span><span id="bootPct">0%</span></div></div></div>
+  <div class="lb t" aria-hidden="true"></div><div class="lb b" aria-hidden="true"></div>
+  <canvas id="warp" aria-hidden="true"></canvas>
+  <div class="vig" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="glow" id="glow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a href="#home" class="logo" aria-label="Home"><span>SK</span><i>.</i></a>
+      <nav class="links" id="links" aria-label="Primary"></nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme" aria-label="Toggle light / dark theme"></button>
+        <a class="btn btn-sm btn-solid" href="#contact">Let’s talk</a>
+        <button class="icon-btn menu-btn" id="menu" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="hero-fade" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="pulse"></span><span id="status"></span></p>
+          <h1 class="display">
+            <span class="ln"><span class="rise">I build &amp; run</span></span>
+            <span class="ln"><span class="rise d1"><em>resilient</em> cloud</span></span>
+            <span class="ln"><span class="rise d2 outline">infrastructure.</span></span>
+          </h1>
+          <p class="role reveal"><span class="role-label">Currently:</span> <span id="typed" class="typed"></span><span class="caret"></span></p>
+          <p class="lead reveal" id="lead"></p>
+          <div class="cta reveal">
+            <a class="btn btn-solid" href="#projects">View my work <span data-icon="arrow"></span></a>
+            <a class="btn btn-ghost" id="resumeBtn" href="#" download><span data-icon="download"></span> Résumé</a>
+            <a class="icon-btn round" id="liBtn" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><span data-icon="in"></span></a>
+            <a class="icon-btn round" id="waBtn" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><span data-icon="wa"></span></a>
+            <a class="icon-btn round" id="mailBtn" href="#" aria-label="Email"><span data-icon="mail"></span></a>
+            <a class="icon-btn round" id="ghBtn" href="#" target="_blank" rel="noopener" aria-label="GitHub" hidden><span data-icon="gh"></span></a>
+          </div>
+        </div>
+
+        <figure class="portrait reveal">
+          <div class="ring"></div>
+          <div class="frame">
+            <img src="assets/profile.jpg" alt="Portrait of Shubham Kumar" width="816" height="768" fetchpriority="high" />
+            <div class="frame-shade"></div>
+          </div>
+          <span class="chip-float c1">AWS Certified · SA Associate</span>
+          <span class="chip-float c2">Terraform</span>
+          <span class="chip-float c3">Kubernetes</span>
+          <figcaption><b id="pName"></b><small id="pLoc"></small></figcaption>
+        </figure>
+      </div>
+
+      <div class="wrap stats" id="heroStats"></div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+    <!-- ABOUT -->
+    <section id="about" class="sec">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="idx">01 / About</span><h2>Operations mindset. <em>Architect’s</em> ambition.</h2></header>
+        <div class="about-grid">
+          <div class="about-copy reveal" id="aboutCopy"></div>
+          <div class="term reveal" aria-label="Terminal summary">
+            <div class="term-bar"><i></i><i></i><i></i><span>shubham@cloud ~ %</span></div>
+            <div class="term-body" id="term"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLKIT -->
+    <section id="toolkit" class="sec alt">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="idx">02 / Toolkit</span><h2>My <em>toolkit.</em></h2></header>
+        <div class="tk-controls reveal">
+          <div class="tabs" id="tabs" role="tablist"></div>
+          <label class="search"><span class="sr">Filter tools</span><input id="skillSearch" type="search" placeholder="Filter, e.g. terraform" autocomplete="off" /></label>
+        </div>
+        <div class="tk-grid" id="tkGrid"></div>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section id="impact" class="sec">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="idx">03 / Impact</span><h2>Numbers that <em>matter.</em></h2></header>
+        <div class="impact-grid" id="impactGrid"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="sec alt">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="idx">04 / Experience</span><h2>Experience &amp; <em>milestones.</em></h2></header>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- CI/CD PIPELINE -->
+    <section id="cicd" class="sec">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="idx">05 / CI/CD Workflow</span><h2>Commit to <em>production,</em> end to end.</h2></header>
+        <p class="pl-intro reveal">A reference workflow for containerized services on Amazon ECS and EKS: build, scan, push to ECR, review the Terraform plan, deploy, verify, observe and roll back. Pick a target, hit run, or click any stage to inspect it.</p>
+        <div class="pl reveal" id="pipeline" data-state="idle">
+          <div class="pl-bar">
+            <div class="seg" id="plTarget" role="tablist" aria-label="Deployment target"></div>
+            <div class="pl-actions">
+              <span class="pl-status"><i></i><span id="plStatus" role="status">Idle</span></span>
+              <button class="btn btn-solid btn-sm" id="plRun" type="button">Run pipeline</button>
+              <button class="btn btn-ghost btn-sm" id="plReset" type="button">Reset</button>
+            </div>
+          </div>
+          <div class="pl-prog" aria-hidden="true"><i id="plProg"></i></div>
+          <div class="lanes" id="plLanes"></div>
+          <div class="pl-detail">
+            <div class="card pl-info" id="plInfo"></div>
+            <div class="term">
+              <div class="term-bar"><i></i><i></i><i></i><span id="plFile"></span></div>
+              <pre class="term-body" id="plCode"></pre>
+            </div>
+          </div>
+          <div class="term pl-log">
+            <div class="term-bar"><i></i><i></i><i></i><span>pipeline.log · illustrative run</span></div>
+            <div class="term-body" id="plLog" aria-live="off"></div>
+          </div>
+          <p class="pl-note">Illustrative reference workflow based on the patterns I run on ECS and EKS. Repository, account and service names are placeholders, and timings are simulated.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="sec alt">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="idx">06 / Projects</span><h2>Selected work. <em>Engineered</em> value.</h2></header>
+        <div class="proj-grid" id="projGrid"></div>
+      </div>
+    </section>
+
+    <!-- CERTS + EDUCATION -->
+    <section id="credentials" class="sec">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="idx">07 / Credentials</span><h2>Certified &amp; <em>educated.</em></h2></header>
+        <div class="cert-grid" id="certGrid"></div>
+        <h3 class="sub reveal">Education</h3>
+        <div class="edu-grid" id="eduGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="sec contact">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <span class="idx">08 / Contact</span>
+          <h2 class="big">Let’s build something <em>reliable.</em></h2>
+          <p class="lead">Open to conversations about cloud operations, DevOps and solution architecture work. Drop a note and I’ll get back to you.</p>
+          <ul class="contact-list" id="contactList"></ul>
+        </div>
+        <form class="form reveal" id="form" novalidate>
+          <label>Name<input name="name" required autocomplete="name" placeholder="Your name" /></label>
+          <label>Email<input name="email" type="email" required autocomplete="email" placeholder="you@company.com" /></label>
+          <label>Message<textarea name="message" rows="5" required placeholder="What are you working on?"></textarea></label>
+          <label>Phone / WhatsApp <small>(optional)</small><input name="phone" type="tel" autocomplete="tel" placeholder="+91 …" /></label>
+          <input class="hp" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="form-btns">
+            <button class="btn btn-solid" type="submit" data-mode="wa">Send to WhatsApp <span data-icon="arrow"></span></button>
+            <button class="btn btn-ghost" type="submit" data-mode="email">Email instead</button>
+          </div>
+          <p class="form-priv">Your name, email, phone (optional), message and the site you arrived from (e.g. Instagram or LinkedIn) are shared with Shubham only when you press send.</p>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <span>© <span id="year"></span> Shubham Kumar. Built with HTML, CSS &amp; vanilla JS.</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <nav class="dock" id="dock" aria-label="Contact and social links"></nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript><div class="wrap" style="padding:40px 0">Shubham Kumar: AWS Cloud Operations &amp; Support SME. Please enable JavaScript to view the full portfolio, or open the résumé at assets/Shubham-Kumar-Resume.pdf.</div></noscript>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pipeline.js"></script>
+  <script src="js/agent.js"></script>
+  <script src="js/cinematic.js"></script>
+</body>
+</html>
